@@ -43,21 +43,21 @@ menu = ["nasi lemak", "pizza", "burger", "fried chicken", "pepsi", "orange juice
 Build the map and navigation for Wait-Bot-X
 
 ### SLAM Map Building
-Make sure you run 'roscore' in another terminal before begin with this part.
-Run below command one by one to generate the map for navigation later
+Make sure you run *roscore* in another terminal before begin with this part.
+Run below command one by one in different terminal to generate the map for navigation later
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[username/[workspace]/src/wait_bot_x/maps/res_map.world
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[username]/[workspace]/src/wait_bot_x/maps/res_map.world
 roslaunch turtlebot_gazebo gmapping_demo.launch
 roslaunch turtlebot_rviz_launchers view_navigation.launch
 roslaunch turtlebot_teleop keyboard_teleop.launch
-rosrun map_server map_saver -f /home/[username/[workspace]/src/wait_bot_x/maps/restaurant_map
+rosrun map_server map_saver -f /home/[username]/[workspace]/src/wait_bot_x/maps/restaurant_map
 ```
 
 ### Autonomous Navigation
-Make sure you run 'roscore' in another terminal before begin with this part
+Make sure you run *roscore* in the different terminal before begin with this part
 ```
-roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[username/[workspace]/src/wait_bot_x/maps/res_map.world
-roslaunch turtlebot_gazebo amcl_demo.launch map_file:=/home/[username/[workspace]/src/wait_bot_x/maps/restaurant_map.yaml
-roslaunch turtlebot_rviz_launchers view_navigation.launch (using RViz)
-roslaunch rchomeedu_navigation navigation.launch (using code) 
+roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=/home/[username]/[workspace]/src/wait_bot_x/maps/res_map.world
+roslaunch turtlebot_gazebo amcl_demo.launch map_file:=/home/[username]/[workspace]/src/wait_bot_x/maps/restaurant_map.yaml
+roslaunch turtlebot_rviz_launchers view_navigation.launch
+roslaunch rchomeedu_navigation navigation.launch
 ```
