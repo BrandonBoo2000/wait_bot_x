@@ -7,6 +7,7 @@ cd [workspace]/src
 git clone https://github.com/BrandonBoo2000/wait_bot_x.git
 cd ..
 catkin_make
+chmod +x *.py
 ```
 
 Setup Turtlebot
@@ -34,7 +35,7 @@ There are several speech can be detected to perform respective task when orderin
   - must state the item and the amount of the items
   - example: I want a fried chicken, six burger and etc
 
-Menu
+Example Item in Menu in Wait-Bot-X
 ```
 menu = ["nasi lemak", "pizza", "burger", "fried chicken", "pepsi", "orange juice", "apple juice", "coffee"]
 ```
