@@ -7,6 +7,7 @@ cd [workspace]/src
 git clone https://github.com/BrandonBoo2000/wait_bot_x.git
 cd ..
 catkin_make
+cd src/wait_bot_x/scripts
 chmod +x *.py
 ```
 
